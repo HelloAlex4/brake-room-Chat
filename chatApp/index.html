@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanti Anonym Chat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topper">
+  <a href="https://brake-room.ch" class="arrow-link">&#x2190;</a>
+  <!-- You can replace https://www.example.com with your desired link -->
+</div>
+
+<div class="chat-container">
+    <div class="messages" id="messageBoard">
+        <!-- Messages will be displayed here -->
+    </div>
+    <form action="submitMessage.php" method="post" class="input-area">
+        <div id="warningMessage" class="warningMessage">Nachricht zu Lang</div>
+        <input type="text" name="message" id="message-input" placeholder="Type a message...">
+        <button type="submit" id="send-button">&#x27A4;</button> <!-- Unicode arrow for simplicity -->
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

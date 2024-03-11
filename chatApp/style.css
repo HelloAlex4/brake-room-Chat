@@ -1,0 +1,103 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.chat-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+.messages {
+    margin-bottom: 50px; /* Adjust based on your needs */
+    padding: 10px;
+    height: calc(100vh - 50px); /* Adjust based on the height of your input area */
+    overflow-y: scroll;
+}
+
+.warningMessage{
+    background-color: red;
+    display: none;
+    position: absolute;
+    width: 20%;
+    height: 15px;
+    font-size: 10px;
+    justify-content: center;
+    transform: translateY(-10px);
+}
+
+.message{
+    background-color: #5cc6ff;
+    border-radius: 20px;
+    width: fit-content;
+    justify-content: center;
+    align-content: center;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+.input-area {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+.input-area input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 0; /* Adjust according to your design preference */
+    outline: none;
+}
+
+.input-area button {
+    padding: 10px 15px;
+    background-color: blueviolet; /* Change button color as needed */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.topper {
+  position: fixed; /* Fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #737373; /* A brighter blue for better visibility */
+  color: white;
+  text-align: left;
+  padding: 12px 0; /* Adjust padding for better visibility */
+  z-index: 1000; /* Ensures it stays on top of other content */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Adds a subtle shadow for depth */
+}
+
+.arrow-link {
+  color: white; /* Keeps the arrow white for contrast */
+  padding: 0 20px;
+  text-decoration: none;
+  font-size: 32px; /* Makes the arrow significantly larger */
+  vertical-align: middle; /* Ensures the arrow is centered vertically */
+}
+
+/* Adds a more noticeable hover effect */
+.arrow-link:hover {
+  color: #d6e9ff; /* A lighter blue on hover for a nice effect */
+}
+
+.input-area button:active {
+    background-color: #367c39; /* Darker shade for click effect */
+}
+
+/* Adjustments for better mobile viewing */
+@media screen and (max-width: 768px) {
+    .messages {
+        height: calc();
+}
